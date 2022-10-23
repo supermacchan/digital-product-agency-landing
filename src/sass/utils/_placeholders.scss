@@ -1,0 +1,17 @@
+%container {
+    max-width: $desktop;
+}
+
+%title {
+    color: $title-text-color;
+
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.22;
+    text-align: center;
+}
+
+%section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}

@@ -1,1 +1,18 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+    font-family: $main-font;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
