@@ -15,12 +15,20 @@
 .clients__description {
     margin-top: 17px;
     margin-bottom: 0;
+
+    color: $main-text-color;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.61;
 }
 
 .clients__list {
     display: flex;
     align-items: center;
     gap: 60px;
+
+    margin-left: 60px;
 }
 
 .amazon-icon {
