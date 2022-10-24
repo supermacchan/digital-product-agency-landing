@@ -1,0 +1,23 @@
+.header {
+    @extend %container;
+
+    padding: 42px 120px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 60px;
+}
+
+.header__link {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+}

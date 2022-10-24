@@ -1,12 +1,15 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 body {
+    margin-left: auto;
+    margin-right: auto;
     font-family: $main-font;
 }
 
 ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 a {
