@@ -1,19 +1,19 @@
 %container {
-    max-width: $desktop;
     margin-left: auto;
     margin-right: auto;
 }
 
 %title {
+    margin: 0;
+
     color: $title-text-color;
 
-    font-weight: 500;
+    font-weight: 700;
     font-size: 40px;
     line-height: 1.22;
-    text-align: center;
 }
 
 %section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin-bottom: 40px;
+    padding-left: 120px;
 }

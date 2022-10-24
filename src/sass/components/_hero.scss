@@ -1,0 +1,114 @@
+.hero {
+    @extend %container;
+    @extend %section;
+
+    display: flex;
+
+    padding-bottom: 89px;
+}
+
+.hero__text-content {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-right: 95px;
+
+    &::after {
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: -50px;
+
+        height: 154px;
+        width: 404px;
+
+        background-image: url('../images/jpg/hero-dot-ornament.jpg');
+        z-index: 4;
+    }
+}
+
+.hero__title {
+    @extend %title;
+
+    margin-top: 120px;
+}
+
+.hero__description {
+    margin-top: 40px;
+    margin-bottom: 35px;
+
+    color: $main-text-color;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.62;
+}
+
+.hero__contact-button {
+    padding: 20px 40px;
+    border: 0;
+    border-radius: 60px;
+
+    background-color: $accent-color;
+    color: $accent-text-color;
+
+    z-index: 5;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.25;
+
+    &:hover,
+    &:focus {
+        background-color: $active-color;
+        color: $accent-color;
+    }
+}
+
+.hero__image-container {
+    display: flex;
+    position: relative;
+
+    &::before {
+        content: "";
+    
+        position: absolute;
+        top: 0;
+        left: -65px;
+    
+        height: 130px;
+        width: 130px;
+    
+        border-radius: 50%;
+        background-color: $background-blue;
+        z-index: 5;
+        }
+
+    &::after {
+        content: "";
+    
+        position: absolute;
+        bottom: -89px;
+        right: 120px;
+    
+        height: 178px;
+        width: 178px;
+    
+        border-bottom-right-radius: 50%;
+        background-color: $background-yellow;
+        z-index: 5;
+        }
+}
+
+.hero__image {
+    
+    width: 754px;
+    height: 512px;
+    object-fit: cover;
+    border-bottom-left-radius: 200px;
+    z-index: 12;
+}
