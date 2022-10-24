@@ -1,0 +1,29 @@
+.clients {
+    @extend %container;
+    @extend %section;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 54px 120px;
+}
+
+.clients__title {
+    @extend %title;
+}
+
+.clients__description {
+    margin-top: 17px;
+    margin-bottom: 0;
+}
+
+.clients__list {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.amazon-icon {
+    align-self: flex-end;
+}
+
