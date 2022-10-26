@@ -1,0 +1,154 @@
+.service {
+    @extend %container;
+    @extend %section;
+    
+    display: flex;
+    align-items: center;
+
+    padding-bottom: 100px;
+}
+
+.service__text-content {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+        content: "";
+        
+        position: absolute;
+        top: -60px;
+        left: -38px;
+        
+        height: 178px;
+        width: 178px;
+
+        border-top-left-radius: 100px;
+        background-color: $background-yellow;
+        z-index: 5;
+    }
+
+    &::after {
+        content: "";
+    
+        position: absolute;
+        bottom: -260px;
+        left: 0;
+    
+        height: 154px;
+        width: 404px;
+    
+        background-image: url('../images/jpg/hero-dot-ornament.jpg');
+    }
+}
+
+.service__title {
+    @extend %title;
+
+    z-index: 7;
+}
+
+.service__description {
+    color: $main-text-color;
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.62;
+
+    z-index: 7;
+}
+
+.service__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    position: relative;
+
+    margin-left: 90px;
+
+    &::before {
+            content: "";
+    
+            position: absolute;
+            top: 140px;
+            left: -214px;
+    
+            height: 590px;
+            width: 1047px;
+    
+            border-top-left-radius: 150px;
+            background-color: $background-blue;
+            z-index: 5;
+        }
+}
+
+.service__list-item {
+    width: 308px;
+    height: 380px;
+    padding: 40px 32px 55px 32px;
+
+    border: 1px solid #F2F2F2;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 40px;
+    background-color: $background-color;
+
+    text-align: center;
+
+    z-index: 7;
+
+    &.business-idea-card{
+        margin-top: 80px;
+    }
+
+    &.market-analysis-card {
+        margin-top: -80px;
+    }
+}
+
+.service__icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 121px;
+    height: 121px;
+
+    border-radius: 20px;
+
+    &.business-idea {
+        background-color: $background-blue;
+    }
+
+    &.financing-plan {
+        background-color: $background-yellow;
+    }
+
+    &.website-development {
+        background-color: $background-pink;
+    }
+
+    &.market-analysis {
+        background-color: $background-green;
+    }
+}
+
+.service__item-title {
+    margin-top: 30px;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.service__item-description {
+    margin-top: 27px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+}

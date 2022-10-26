@@ -84,7 +84,7 @@
         width: 130px;
     
         border-radius: 50%;
-        background-color: $background-blue;
+        background-color: $active-color;
         z-index: 5;
         }
 
@@ -98,7 +98,7 @@
         height: 178px;
         width: 178px;
     
-        border-bottom-right-radius: 50%;
+        border-bottom-right-radius: 100px;
         background-color: $background-yellow;
         z-index: 5;
         }
