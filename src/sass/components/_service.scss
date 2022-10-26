@@ -75,7 +75,7 @@
             top: 140px;
             left: -214px;
     
-            height: 590px;
+            height: 610px;
             width: 1047px;
     
             border-top-left-radius: 150px;
@@ -98,11 +98,11 @@
 
     z-index: 7;
 
-    &.business-idea-card{
+    &:first-child{
         margin-top: 80px;
     }
 
-    &.market-analysis-card {
+    &:last-child {
         margin-top: -80px;
     }
 }
