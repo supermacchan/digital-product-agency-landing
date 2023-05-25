@@ -94,7 +94,7 @@
         width: 120px;
         height: 120px;
 
-        border: 8.8px solid #FF007A;
+        border: 8.8px solid $background-rose;
         border-radius: 50%;
         box-sizing: border-box;
     }
@@ -159,6 +159,8 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 1.25;
+
+    color: $title-text-color;
 }
 
 .service__item-description {
@@ -167,4 +169,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.4;
+
+    color: $main-text-color;
 }
