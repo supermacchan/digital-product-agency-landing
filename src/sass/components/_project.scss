@@ -17,6 +17,7 @@
     border-radius: 32px;
 
     pointer-events: none;
+    cursor: pointer;
 
     &::after {
         content: '';
