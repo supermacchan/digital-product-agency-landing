@@ -6,6 +6,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         vertical: true,
+        autoplay: true,
         // adaptiveHeight: true
     });
 });
