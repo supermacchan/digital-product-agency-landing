@@ -4,6 +4,7 @@ const contactModal = document.querySelector('.js-contact-modal');
 const contactModalOpenBtn = document.querySelector('.js-contact-modal-open');
 const contactModalCloseBtn = document.querySelector('.js-contact-modal-close');
 const contactForm = document.querySelector('.js-contact-form');
+const contactFormInput = document.querySelectorAll(".js-contact-form-input");
 
 contactModalOpenBtn.addEventListener('click', onContactModalOpen);
 contactModalCloseBtn.addEventListener('click', onContactModalClose);
@@ -44,6 +45,8 @@ function onEscape(e) {
 function onContactFormSubmit(e) {
     e.preventDefault();
     onContactModalClose();
+
+    contactFormInput.forEach(input => input.value = '');
 
     Notiflix.Notify.success(
         'Thank you! We will get back to you within 24 hours.',

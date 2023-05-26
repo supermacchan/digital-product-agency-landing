@@ -1,6 +1,7 @@
 import Notiflix from 'notiflix';
 
 const form = document.querySelector(".subscription__form");
+const subscriptionInput = document.querySelector(".subscription__input");
 
 form.addEventListener('submit', onFormSubmit);
 
@@ -16,4 +17,5 @@ function onFormSubmit(e) {
             fontFamily: 'Raleway'
         }
     );
+    subscriptionInput.value = '';
 }
