@@ -8,3 +8,12 @@ function onBtnClick () {
         behavior: "smooth"
     });
 }
+
+SmoothScroll({
+    stepSize: 175,
+    animationTime: 800,
+    accelerationDelta: 200,
+    accelerationMax: 6,
+    keyboardSupport: true,
+    arrowScroll: 100,
+  });
