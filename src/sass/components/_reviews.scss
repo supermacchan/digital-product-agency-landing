@@ -16,42 +16,34 @@
     font-size: 18px;
     color: $main-text-color;
 
-    margin: 17px 0 115px 0;
+    margin: 17px 0 95px 0;
 }
 
-.reviews__card {
+.reviews__container {
     display: flex;
-}
-
-.reviews__photo-container {
     position: relative;
-    z-index: 10;
-
-    width: 389px;
-    height: 389px;
-
-    margin-right: 65px;
 
     &::before {
         content: '';
 
         position: absolute;
-        top: -42px;
-        right: -37px;
+        top: -22px;
+        left: 230px;
 
         height: 154px;
         width: 196px;
 
         background-image: url('../images/jpg/dots-bg.png');
-        z-index: 4;
+        z-index: -1;
     }
 
     &::after {
         content: '';
 
         position: absolute;
-        bottom: -12px;
+        bottom: 32;
         left: -10px;
+        z-index: -1;
 
         width: 120px;
         height: 120px;
@@ -62,6 +54,25 @@
     }
 }
 
+.reviews__slider {
+    max-width: 870px;
+}
+
+.reviews__card {
+    display: flex;
+    padding: 20px 0;
+}
+
+.reviews__photo-container {
+    position: relative;
+    z-index: 10;
+
+    width: 389px;
+    height: 389px;
+
+    margin-right: 65px;
+}
+
 .reviews__photo {
     position: relative;
     z-index: 10;
@@ -70,7 +81,9 @@
 
     border-radius: 500px 0 500px 500px;
 
-    filter: drop-shadow(10px 20px 50px rgba(0, 0, 0, 0.15));
+    box-shadow: 10px 10px 13px rgba(0, 0, 0, 0.1);
+
+    // filter: drop-shadow(10px 20px 50px rgba(0, 0, 0, 0.15));
 }
 
 .review {
@@ -106,6 +119,7 @@
     height: 355px;
 
     margin-left: 38px;
+    padding: 20px 0;
 
     &::after {
         content: '';
@@ -125,4 +139,60 @@
 
 .reviews__img {
     width: 100%;
+}
+
+/* slick slider */
+.slick-dots {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    margin-bottom: 0;
+
+    position: absolute;
+    bottom: 90px;
+    right: 232px;
+}
+  
+.slick-dots li:not(:last-child) {
+    margin-right: 26px;
+}
+  
+.slick-dots li button::before {
+    font-family: 'slick';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    background-color: $background-purple;
+}
+  
+.slick-dots li button:hover::before,
+.slick-dots li button:focus::before {
+    background-color: $background-purple;
+}
+  
+.slick-dots li.slick-active button:before {
+    content: '';
+    background-color: $accent-color;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+  
+.slick-dots li {
+    width: 16px;
+}
+  
+button.slick-arrow {
+    display: none !important;
+}
+  
+.slick-dots > li > button {
+    border: none;
+    background: none;
+    color: transparent;
+    padding: 0;
+    margin: 0;
 }
