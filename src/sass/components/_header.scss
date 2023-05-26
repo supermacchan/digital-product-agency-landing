@@ -15,11 +15,22 @@
     gap: 60px;
 }
 
+.header__logo {
+    transition: transform $transition-time $transition-behavior;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.07);
+    }
+}
+
 .header__link {
     color: $title-text-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
+
+    transition: color $transition-time $transition-behavior;
 
     .header__list-item:hover &,
     &:focus {

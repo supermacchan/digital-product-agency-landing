@@ -50,7 +50,7 @@
 
 .hero__contact-button {
     padding: 20px 40px;
-    border: 0;
+    border: 0.5px solid transparent;
     border-radius: 60px;
 
     background-color: $accent-color;
@@ -62,10 +62,17 @@
     font-size: 20px;
     line-height: 1.25;
 
+    transition: color $transition-time $transition-behavior,
+    background-color $transition-time $transition-behavior,
+    box-shadow $transition-time $transition-behavior,
+    border $transition-time $transition-behavior;
+
     &:hover,
     &:focus {
         background-color: $active-color;
         color: $accent-color;
+        box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.15);
+        border: 0.5px solid $accent-color;
     }
 }
 

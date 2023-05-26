@@ -35,3 +35,11 @@
     margin-top: 23px;
 }
 
+.clients__list-item {
+    transition: transform $transition-time $transition-behavior;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.09);
+    }
+}

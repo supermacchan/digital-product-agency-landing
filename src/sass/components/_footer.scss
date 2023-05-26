@@ -39,6 +39,15 @@
     gap: 16px;
 }
 
+.about__socials-item {
+    transition: transform $transition-time $transition-behavior;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.09);
+    }
+}
+
 .about__socials-icon {
     width: 36px;
     height: 36px;
@@ -69,12 +78,15 @@
 .footer__list {
     font-size: 14px;
     line-height: 2;
+    font-weight: 500;
 
     color: $title-text-color;
 }
 
 .footer__link {
     color: $title-text-color;
+
+    transition: color $transition-time $transition-behavior;
 
     &:hover,
     &:focus {

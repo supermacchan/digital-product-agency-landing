@@ -115,8 +115,19 @@
     padding: 20px 40px;
 
     border-radius: 60px;
-    border: none;
+    border: 0.5px solid transparent;
 
     background-color: $accent-color;
     color: $accent-text-color;
+
+    transition: color $transition-time $transition-behavior,
+    background-color $transition-time $transition-behavior,
+    border $transition-time $transition-behavior;
+
+    &:hover,
+    &:focus {
+        background-color: $active-color;
+        color: $accent-color;
+        border: 0.5px solid $accent-color;
+    }
 }

@@ -17,3 +17,23 @@ $background-purple: #EFF1FF;
 $background-rose: #FF007A;
 
 $main-font: 'Raleway', sans-serif;
+
+$transition-time: 250ms;
+$transition-behavior: cubic-bezier(0.4, 0, 0.2, 1);
+
+@keyframes pulse {
+	0% {
+        transform: translate(-50%, -50%) scale(1);
+		box-shadow: 0 0 0 0 #263aed79;
+	}
+
+	70% {
+        transform: translate(-50%, -50%) scale(1.06);
+		box-shadow: 0 0 0 15px rgba(238, 0, 111, 0);
+	}
+
+	100% {
+        transform: translate(-50%, -50%) scale(1);
+		box-shadow: 0 0 0 0 rgba(238, 0, 111, 0);
+	}
+}
