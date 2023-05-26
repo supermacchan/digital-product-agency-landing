@@ -1,0 +1,93 @@
+.footer {
+    @extend %container;
+    @extend %section;
+
+    padding-right: 120px;
+    margin-bottom: 0;
+}
+
+.footer__container {
+    border-top: 1px solid $background-purple;
+    border-bottom: 1px solid $background-purple;
+
+    padding-top: 60px;
+    padding-bottom: 30px;
+
+    display: flex;
+}
+
+.about {
+    max-width: 270px;
+    margin-right: 190px;
+}
+
+.about__logo {
+    margin-bottom: 26px;
+}
+
+.about__description {
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: $main-text-color;
+
+    margin-bottom: 40px;
+}
+
+.about__socials {
+    display: flex;
+    gap: 16px;
+}
+
+.about__socials-icon {
+    width: 36px;
+    height: 36px;
+}
+
+.footer__services {
+    margin-right: 120px;
+}
+
+.footer__company {
+    margin-right: 106px;
+}
+
+.footer__support {
+    margin-right: 106px;
+}
+
+.footer__title {
+    font-size: 20px;
+    line-height: 1;
+
+    margin-top: 0;
+    margin-bottom: 24px;
+
+    color: $title-text-color;
+}
+
+.footer__list {
+    font-size: 14px;
+    line-height: 2;
+
+    color: $title-text-color;
+}
+
+.footer__link {
+    color: $title-text-color;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.footer__copyright {
+    color: $light-text;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+
+    padding: 17px 0 23px 0;
+    margin: 0;
+}
