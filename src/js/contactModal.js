@@ -1,9 +1,13 @@
+import Notiflix from 'notiflix';
+
 const contactModal = document.querySelector('.js-contact-modal');
 const contactModalOpenBtn = document.querySelector('.js-contact-modal-open');
 const contactModalCloseBtn = document.querySelector('.js-contact-modal-close');
+const contactForm = document.querySelector('.js-contact-form');
 
 contactModalOpenBtn.addEventListener('click', onContactModalOpen);
 contactModalCloseBtn.addEventListener('click', onContactModalClose);
+contactForm.addEventListener('submit', onContactFormSubmit);
 
 // window.addEventListener('click', (e) => {console.log(e.target)});
 
@@ -35,4 +39,20 @@ function onEscape(e) {
     if (e.code === ESCAPE_KEY_CODE) {
         onContactModalClose();
     }
+}
+
+function onContactFormSubmit(e) {
+    e.preventDefault();
+    onContactModalClose();
+
+    Notiflix.Notify.success(
+        'Thank you! We will get back to you within 24 hours.',
+        {
+            timeout: 4000,
+            borderRadius: '35px',
+            fontSize: '16px',
+            width: '300px',
+            fontFamily: 'Raleway'
+        }
+    );
 }
