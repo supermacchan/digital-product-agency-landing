@@ -61,6 +61,36 @@
     //     transform: translate(-50%, -50%);
     //     max-width: 1200px;
     // }
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        top: 142px;
+        right: 170px;
+
+        width: 130px;
+        height: 130px;
+
+        border-radius: 50%;
+
+        background-color: $background-yellow;
+        z-index: -1;
+    }
+
+    &::after {
+        content: '';
+
+        position: absolute;
+        top: 122px;
+        right: 40px;
+
+        width: 175px;
+        height: 154px;
+
+        background-image: url('../images/jpg/dot-bg.png');
+        z-index: -1;
+    }
 }
 
 .contact-modal__close-btn {
@@ -85,14 +115,14 @@
     }
 }
 
-.modal__close-icon {
-    stroke: black;
+.contact-modal__close-icon {
+    stroke: $accent-color;
 
-    transition: stroke 250ms $transition-behavior;
+    transition: stroke $transition-time $transition-behavior;
 
     .contact-modal__close-btn:hover &, 
     .contact-modal__close-btn:focus & {
-        stroke: var(--accent-color);
+        stroke: $background-rose;
     }
 }
 
@@ -107,4 +137,70 @@
     gap: 20px;
 
     padding-bottom: 10px;
+}
+
+.contact-modal__input {
+    border: 1px solid $light-text;
+    width: 270px;
+    padding: 10px 15px;
+
+    border-radius: 60px;
+
+    &::placeholder {
+        color: #959595;
+        font-size: 14px;
+    }
+}
+
+.contact-modal__comment {
+    border: 1px solid $light-text;
+
+    padding: 20px 15px;
+
+    border-radius: 25px;
+
+    &::placeholder {
+        color: #959595;
+        font-size: 14px;
+    }
+}
+
+.contact-modal__submit-btn {
+    align-self: center;
+    padding: 20px 40px;
+
+    width: 150px;
+
+    border-radius: 60px;
+    border: 0.5px solid transparent;
+
+    background-color: $accent-color;
+    color: $accent-text-color;
+
+    transition: color $transition-time $transition-behavior,
+    background-color $transition-time $transition-behavior,
+    border $transition-time $transition-behavior;
+
+    &:hover,
+    &:focus {
+        background-color: $active-color;
+        color: $accent-color;
+        border: 0.5px solid $accent-color;
+    }
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        bottom: 68px;
+        left: 50px;
+
+        width: 130px;
+        height: 130px;
+
+        border-bottom-right-radius: 100px;
+
+        background-color: $background-blue;
+        z-index: -1;
+    }
 }
