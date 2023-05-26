@@ -2,6 +2,7 @@
 @import './utils/breakpoints';
 @import './utils/mixins';
 @import './utils/placeholders';
+@import './utils/keyframes';
 
 @import './components/common';
 @import './components/header';
@@ -12,3 +13,4 @@
 @import './components/reviews';
 @import './components/subscription';
 @import './components/footer';
+@import './components/goUpButton';
